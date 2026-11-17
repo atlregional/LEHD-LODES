@@ -84,6 +84,7 @@ main{padding:28px 0 48px}
 .grid2 .panel{margin-bottom:0}
 .chart{position:relative;height:420px}
 .chart.short{height:320px}
+.panel .footnote{color:var(--muted);font-size:.8rem;margin:.8rem 0 0;border-top:1px solid var(--line, rgba(127,127,127,.3));padding-top:.5rem}
 
 .mapbar{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;margin-bottom:10px}
 .mapbar fieldset{border:0;padding:0;margin:0;display:flex;gap:16px;flex-wrap:wrap}
@@ -175,6 +176,10 @@ footer{border-top:1px solid var(--rule);color:var(--muted);font-size:.86rem;padd
     <h3 id="o1">Inter-county commute rate, whole region</h3>
     <p class="note">Share of resident workers whose job is in a different county.</p>
     <div class="chart short"><canvas id="rateTrend" role="img" aria-label="Regional inter-county commute rate by year"></canvas></div>
+    <p class="footnote"><strong>Note:</strong> The apparent dip in Georgia’s 2019 LODES data is typically an
+    administrative data artifact rather than an actual economic contraction, as Georgia experienced steady job growth
+    throughout 2019. Source: Atlanta Regional Commission, <a href="https://atlantaregional.org/news/33n/lodes-of-commuting-data-inflows-and-outflows-from-lehd/">LODES
+    of Commuting Data: Inflows and Outflows from LEHD</a>.</p>
   </section>
   <section class="panel" aria-labelledby="o2">
     <h3 id="o2">Where resident workers’ jobs are</h3>
