@@ -178,8 +178,8 @@ footer{border-top:1px solid var(--rule);color:var(--muted);font-size:.86rem;padd
   <dl class="defs">
     <dt>LODES</dt>
     <dd>LEHD Origin-Destination Employment Statistics, published by the U.S. Census Bureau. It links each job’s
-    workplace census block to the worker’s home census block. This site uses LODES version 8, which places every year
-    on 2020 census blocks, so years can be compared on the same geography.</dd>
+    workplace census block to the worker’s home census block. This site uses LODES version 8.5, which places every year
+    on 2020 census blocks, so years can be compared on the same geography. </dd>
 
     <dt>All jobs (JT00)</dt>
     <dd>The job type used here. It counts every job, public and private, including second jobs, so a person with
@@ -232,6 +232,19 @@ footer{border-top:1px solid var(--rule);color:var(--muted);font-size:.86rem;padd
     <dd>To keep the pages fast, tract-to-tract flows under 50 jobs are left off the web maps, and
     the smallest classes appear only when you zoom in. The downloadable GeoJSON files include every flow of 25 jobs or more.</dd>
   </dl>
+</section>
+
+<section class="panel" aria-labelledby="src">
+  <h2 id="src">Data sources</h2>
+  <ul class="limits">
+    <li>U.S. Census Bureau, <a href="https://content.govdelivery.com/accounts/USCENSUS/bulletins/431c93d">Census Bureau
+    Releases OnTheMap Update with More LODES Employment Data</a> (November 5, 2026). This release, LODES 8.5, adds
+    2024 data, so the LEHD program now provides year-to-year data from 2002 through 2024. (The 2024 release does not
+    include Alaska or Michigan; neither affects this Georgia-only site.)</li>
+    <li>The LODES files were retrieved with the R package <code>lehdr</code>, which was updated to accept the new 2024
+    data. This site uses <a href="https://jamgreen.r-universe.dev/lehdr">version 1.2.2 of the lehdr R package from the
+    lehdr R-universe repository</a>.</li>
+  </ul>
 </section>
 
 <section class="panel" aria-labelledby="lim">
